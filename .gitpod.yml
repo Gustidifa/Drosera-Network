@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup Drosera
+    init: bash setup.sh
+    command: bash
+
+ports:
+  - port: 8545
+    onOpen: ignore
+  - port: 3000
+    onOpen: ignore
